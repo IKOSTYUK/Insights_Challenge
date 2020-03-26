@@ -1,6 +1,11 @@
 from collections import Counter, defaultdict
 import csv
 import sys
+import os
+
+input_file = sys.argv[1]
+output_file = sys.argv[2]
+
 
 def write_file(output_filename, complaints):
     with open(output_filename, 'w') as f:
@@ -27,4 +32,4 @@ def main(input_filename, output_filename):
     write_file(output_filename, read_file(input_filename))
 
 if __name__ == '__main__':
-    main('complaints.csv', 'results.csv')
+    main(input_file, output_file)
