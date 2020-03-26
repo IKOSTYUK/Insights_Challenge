@@ -1,7 +1,6 @@
 from collections import Counter, defaultdict
 import csv
 import sys
-from pathlib import Path
 
 def write_file(output_filename, complaints):
     with open(output_filename, 'w') as f:
