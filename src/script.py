@@ -3,10 +3,6 @@ import csv
 import sys
 import os
 
-input_file = './input/complaints.csv'
-output_file = './output/results.csv'
-
-
 def write_file(output_filename, complaints):
     with open(output_filename, 'w') as f:
         w = csv.DictWriter(f, ('product', 'number of complaints', 'number of companies', '% of total'))
@@ -32,4 +28,4 @@ def main(input_filename, output_filename):
     write_file(output_filename, read_file(input_filename))
 
 if __name__ == '__main__':
-    main(input_file, output_file)
+    main('./input/complaints.csv', './output/results.csv')
