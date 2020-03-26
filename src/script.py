@@ -3,9 +3,6 @@ import csv
 import sys
 import os
 
-#script_dir = os.path.dirname(__file__)  # Script directory
-#full_path = os.path.join(script_dir, '../bmm_private/login_test.txt')
-
 def write_file(output_filename, complaints):
     with open(output_filename, 'w') as f:
         w = csv.DictWriter(f, ('product', 'number of complaints', 'number of companies', '% of total'))
