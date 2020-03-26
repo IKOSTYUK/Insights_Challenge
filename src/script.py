@@ -3,8 +3,8 @@ import csv
 import sys
 import os
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = './input/complaints.csv'
+output_file = './output/results.csv'
 
 
 def write_file(output_filename, complaints):
